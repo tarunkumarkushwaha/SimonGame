@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1>Simon Game</h1>
+    
+    <div class="d-flex justify-content-center flex-wrap mt-4">
+        <button id="green" class="btn-simon btn-green"></button>
+        <button id="red" class="btn-simon btn-red"></button>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap">
+        <button id="yellow" class="btn-simon btn-yellow"></button>
+        <button id="blue" class="btn-simon btn-blue"></button>
+    </div>
+    <h2 id="gameStatus">Press Start to Begin</h2>
+    <button id="startButton" class="btn btn-primary btn-lg">Start Game</button>
+</div>
+
+
+<audio id="nextLevelSound" src="music/next.mp3"></audio>
+<audio id="gameOverSound" src="music/gameover.mp3"></audio>
+<audio id="buttonClickSound" src="music/click.mp3"></audio>
+
+<script src="gameEngine.js"></script>
+</body>
+</html>
+

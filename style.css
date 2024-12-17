@@ -1,0 +1,64 @@
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#gameStatus {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 20px 0;
+}
+
+.btn-simon {
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    margin: 15px;
+    border: none;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.btn-simon:hover {
+    cursor: pointer;
+    /* transform: scale(1.05); */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-simon:focus {
+    outline: none;
+}
+
+.btn-green {
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+}
+
+.btn-red {
+    background: linear-gradient(135deg, #FF5252, #D50000);
+}
+
+.btn-yellow {
+    background: linear-gradient(135deg, #FFEB3B, #FBC02D);
+}
+
+.btn-blue {
+    background: linear-gradient(135deg, #42A5F5, #1976D2);
+}
+
+.btn-simon.active {
+    filter: brightness(1.3);
+    transform: scale(1.1);
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #bdbdbd;
+    border-radius: 15px;
+    padding: 10px;
+}
